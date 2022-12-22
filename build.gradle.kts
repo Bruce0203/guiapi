@@ -78,11 +78,11 @@ allprojects {
                 val REPO = rootProject.name
                 val OWNER = findProperty("github.owner")
 
-                url = uri("https://maven.pkg.github.com/$OWNER/$REPO")
+                url = uri("https://s01.oss.sonatype.org/content/repositories/releases/")
                 credentials {
 
-                    username = findProperty("github.username") as? String
-                    password = findProperty("github.token") as? String
+                    username = findProperty("SONATYPE_USERNAME") as? String
+                    password = findProperty("SONATYPE_PASSWORD") as? String
                 }
             }
         }
