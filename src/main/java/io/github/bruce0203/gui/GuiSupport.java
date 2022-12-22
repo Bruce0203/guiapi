@@ -1,4 +1,4 @@
-package io.github.inggameteam.inggame.gui;
+package io.github.bruce0203.gui;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;

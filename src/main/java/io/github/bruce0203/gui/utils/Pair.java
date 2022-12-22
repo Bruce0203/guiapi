@@ -1,4 +1,4 @@
-package io.github.inggameteam.inggame.gui.utils;
+package io.github.bruce0203.gui.utils;
 
 public class Pair<K, V> {
 

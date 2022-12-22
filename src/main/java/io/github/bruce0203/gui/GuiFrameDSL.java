@@ -1,7 +1,7 @@
-package io.github.inggameteam.inggame.gui;
+package io.github.bruce0203.gui;
 
-import io.github.inggameteam.inggame.gui.utils.Function2;
-import io.github.inggameteam.inggame.gui.utils.Function3;
+import io.github.bruce0203.gui.utils.Function2;
+import io.github.bruce0203.gui.utils.Function3;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
@@ -36,6 +36,12 @@ public class GuiFrameDSL {
                                 Function<T, ItemStack> transform, Function2<GuiListDSL<T>, GuiFrameDSL> init) {
         guiFrame.list(x, y, width, height, items, transform,
                 (guiList, guiFrame) -> init.invoke(new GuiListDSL<>(guiList), this));
+        return this;
+    }
+
+    public <T> GuiFrameDSL list(int x, int y, int width, int height, Supplier<List<T>> items,
+                                Function<T, ItemStack> transform) {
+        guiFrame.list(x, y, width, height, items, transform, (list, gui) -> {});
         return this;
     }
 

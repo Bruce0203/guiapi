@@ -1,7 +1,7 @@
-package io.github.inggameteam.inggame.gui;
+package io.github.bruce0203.gui;
 
-import io.github.inggameteam.inggame.gui.utils.Function4;
-import io.github.inggameteam.inggame.gui.utils.Pair;
+import io.github.bruce0203.gui.utils.Pair;
+import io.github.bruce0203.gui.utils.Function4;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
 

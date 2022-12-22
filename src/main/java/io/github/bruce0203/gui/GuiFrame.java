@@ -1,6 +1,6 @@
-package io.github.inggameteam.inggame.gui;
+package io.github.bruce0203.gui;
 
-import io.github.inggameteam.inggame.gui.utils.Function2;
+import io.github.bruce0203.gui.utils.Function2;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;

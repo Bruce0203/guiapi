@@ -1,7 +1,7 @@
-package io.github.inggameteam.inggame.gui;
+package io.github.bruce0203.gui;
 
-import io.github.inggameteam.inggame.gui.utils.Function2;
-import io.github.inggameteam.inggame.gui.utils.Function3;
+import io.github.bruce0203.gui.utils.Function2;
+import io.github.bruce0203.gui.utils.Function3;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.entity.EntityPickupItemEvent;
