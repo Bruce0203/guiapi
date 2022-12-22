@@ -81,8 +81,8 @@ allprojects {
                 url = uri("https://s01.oss.sonatype.org/content/repositories/releases/")
                 credentials {
 
-                    username = findProperty("SONATYPE_USERNAME") as? String
-                    password = findProperty("SONATYPE_PASSWORD") as? String
+                    username = System.getenv("SONATYPE_USERNAME")
+                    password = System.getenv("SONATYPE_PASSWORD")
                 }
             }
         }
