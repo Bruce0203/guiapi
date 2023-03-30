@@ -32,6 +32,7 @@ public class GuiFrameImpl implements GuiWindow, GuiFrame {
     public Function3<Integer, Integer, InventoryClickEvent> onClick;
     public Consumer<InventoryClickEvent> onClickBottom;
     public Consumer<InventoryClickEvent> onClickOutside;
+    public Consumer<InventoryDragEvent> onDrag;
 
     public GuiFrameImpl(int lines, String title) {
         inv = Bukkit.createInventory(this, lines * 9, title);
@@ -134,6 +135,8 @@ public class GuiFrameImpl implements GuiWindow, GuiFrame {
     @Override
     public void onDrag(InventoryDragEvent event) {
         event.setCancelled(true);
+        if (onDrag == null) return;
+        this.onDrag.accept(event);
     }
 
     @Override

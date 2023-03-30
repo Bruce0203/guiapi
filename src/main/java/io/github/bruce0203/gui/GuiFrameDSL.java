@@ -5,6 +5,7 @@ import io.github.bruce0203.gui.utils.Function3;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
+import org.bukkit.event.inventory.InventoryDragEvent;
 import org.bukkit.event.inventory.InventoryOpenEvent;
 import org.bukkit.inventory.ItemStack;
 
@@ -62,6 +63,11 @@ public class GuiFrameDSL {
 
     public GuiFrameDSL onClose(Consumer<InventoryCloseEvent> onClose) {
         guiFrame.onClose = onClose;
+        return this;
+    }
+
+    public GuiFrameDSL onDrag(Consumer<InventoryDragEvent> onDrag) {
+        guiFrame.onDrag = onDrag;
         return this;
     }
 
